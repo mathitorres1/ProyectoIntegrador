@@ -1,0 +1,17 @@
+:root {
+  --primaryColor: #5227cc;
+  --primarColorTwo: #7749f8;
+  --secondaryColor: #1c78fd;
+  --secondarColorTwo: #5299ff;
+  --volunteeringColor: #dc3545;
+  --donatingColor: #ff9607;
+  --recycleColor: #28a745;
+  --laborCalls: #17a288;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
