@@ -14,14 +14,50 @@
     />
   </head>
   <body>
-    <p>
-      Aliquip excepteur id enim cillum. Aliqua sit proident eiusmod elit tempor
-      excepteur sit ex exercitation. Qui exercitation minim commodo duis dolore.
-      Enim cupidatat laboris exercitation nulla anim eiusmod in et veniam tempor
-      dolor excepteur labore anim. Mollit ullamco labore commodo duis consequat
-      voluptate amet nulla aute esse aliquip dolor est. Cupidatat dolore culpa
-      commodo minim Lorem commodo est id officia mollit enim aute mollit. Non
-      tempor dolor nisi veniam quis non proident dolore tempor velit dolor.
-    </p>
+    <div class="container">
+      <h1>POPUP Register</h1>
+      <button class="button" id="registerPopupButton">register</button>
+    </div>
+
+    <div class="popup">
+      <div class="popup-content">
+        <h2 class="popup-title">registrar</h2>
+
+        <a class="aText" href="">
+          <img class="arrowBack" src="Materiales/icono-flecha.png" alt="" />
+          volver atras</a
+        >
+        <img
+          class="principalImg-popUp"
+          src="Materiales/imagen-modal.JPG"
+          alt="img"
+        />
+        <img
+          class="close-popup"
+          src="Materiales/close-icon.svg"
+          alt="close-icon"
+        />
+        <!-- <div class="register-business">
+          <img src="Materiales/icono-maletin.png" alt="imgmaletin" />
+        </div>
+        <div class="register-organization">
+          <img src="Materiales/icono-persona.png" alt="imgpersona" />
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("registerPopupButton")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "flex";
+        });
+
+      document
+        .querySelector(".close-popup")
+        .addEventListener("click", function () {
+          document.querySelector(".popup").style.display = "none";
+        });
+    </script>
   </body>
 </html>
