@@ -2,7 +2,7 @@
   --primaryColor: #5227cc;
   --primarColorTwo: #7749f8;
   --secondaryColor: #1c78fd;
-  --secondarColorTwo: #5299ff;
+  --secondaryColorTwo: #5299ff;
   --volunteeringColor: #dc3545;
   --donatingColor: #ff9607;
   --recycleColor: #28a745;
@@ -16,32 +16,32 @@
   box-sizing: border-box;
 }
 
-nav{
+nav {
   height: 100px;
 }
 
-.logo{
+.logo {
   float: left;
   margin: 20px;
 }
 
-.navBar{
+.navBar {
   display: flex;
   list-style: none;
   height: 100px;
 }
 
-.navItem{
+.navItem {
   float: left;
   margin: 5px;
   padding: 35px;
-} 
+}
 
-.navItem:hover{
+.navItem:hover {
   background-color: var(--primarColorTwo);
 }
 
-.buttonContainer{
+.buttonContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -49,7 +49,7 @@ nav{
   height: 100px;
 }
 
-.logInButton{
+.logInButton {
   background-color: var(--primaryColor);
   color: white;
   border-radius: 20px;
@@ -58,11 +58,11 @@ nav{
   width: 150px;
 }
 
-.logInButton:hover{
-  cursor: pointer;  
+.logInButton:hover {
+  cursor: pointer;
 }
 
-header{
+header {
   position: relative;
 }
 
@@ -82,4 +82,105 @@ header p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.popup {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  gap: 5px;
+  display: flex;
+  height: 60vh;
+  width: 90vh;
+  background: #fff;
+  padding: 0.2%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.principalImg-popUp {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.register_div {
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+  transform: scale(50%);
+}
+
+.popup-title {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: default;
+  margin-top: 8%;
+}
+.arrowBack {
+  transform: rotate(-180deg);
+}
+
+.aText {
+  color: #90979d;
+  text-decoration: none;
+  cursor: default;
+}
+
+.register-business {
+  display: flex;
+  height: 30%;
+  margin-top: 10%;
+  gap: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.register-business_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  gap: 5%;
+  background-color: var(--secondaryColorTwo);
+}
+
+.register-business_logo > img {
+  transform: scale(40%);
+}
+.register-business_text > h3 {
+  color: var(--secondaryColorTwo);
+  text-transform: uppercase;
+}
+
+.bannerNav {
+  width: 100%;
 }

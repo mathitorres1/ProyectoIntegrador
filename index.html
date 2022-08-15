@@ -16,27 +16,69 @@
   </head>
   <body>
     <nav>
-      <img src="/Materiales/logo.png" alt="Logo color" class="logo">
+      <img src="Materiales/logo.png" alt="Logo color" class="logo">
       <ul class="navBar">
         <li class="navItem"><a href="">Nosotros</a></li>
         <li class="navItem"><a href="">Noticias</a></li>
         <li class="navItem"><a href="">Ayuda</a></li>
         <div class="buttonContainer">
-          <button class="logInButton">INGRESAR<button>
+          <button id="registerPopupButton" class="logInButton">INGRESAR<button>
+
         </div>
       </ul>
     </nav>
     <header>
-      <img src="Materiales/manos.jpg" alt="Foto de manos">
+      <img class="bannerNav" src="Materiales/manos.jpg" alt="Foto de manos">
       <h1 class="imgText">¡Actua para cambiar el mundo!</h1>
       <p class="imgText">Fomentamos el vinculo entre empresas y organizaciones civiles para generar un impacto positivo en la sociedad. <br>
         Descubri diferentes maneras de involucrar tu organizacion con la sociedad
       </p>
     </header>
-    <p>
-    </p>
+
+    
+    <div class="popup">
+      <div class="popup-content">
+        <img
+          class="principalImg-popUp"
+          src="Materiales/imagen-modal.JPG"
+          alt="img"
+        />
+        <div class="register_div">
+          <a class="aText" href="">
+            <img class="arrowBack" src="Materiales/icono-flecha.png" alt="" />
+            volver atras</a
+          >
+          <h2 class="popup-title">registrar</h2>
+
+          <div class="close-popup">
+            X
+          </div>
+          <div class="register-business">
+            <div class="register-business_logo">
+              <img src="Materiales/icono-maletin.png" alt="imgmaletin" />
+            </div>
+            <div class="register-business_text">
+              <h3>mi empresa</h3>
+              <p>Breve explicacion a lo que nos referimos</p>
+            </div>
+          </div>
+          <div class="register-business">
+            <div class="register-business_logo">
+              <img src="Materiales/icono-maletin.png" alt="imgmaletin" />
+            </div>
+            <div class="register-business_text">
+              <h3>mi empresa</h3>
+              <p>Breve explicacion a lo que nos referimos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
 
     </footer>
+
+    <script type="text/javascript" src="code/code.js"></script>
   </body>
 </html>
