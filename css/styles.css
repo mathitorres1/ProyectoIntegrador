@@ -77,11 +77,9 @@ body {
 
 .popup-title {
   text-align: center;
-  justify-content: center;
-  font-size: 90%;
-  top: 15%;
   text-transform: uppercase;
   cursor: default;
+  margin-top: 8%;
 }
 .arrowBack {
   transform: rotate(-180deg);
@@ -95,14 +93,19 @@ body {
 
 .register-business {
   display: flex;
-  height: 80px;
+  height: 30%;
+  margin-top: 10%;
+  gap: 5px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 .register-business_logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 35%;
   height: 100%;
+  gap: 5%;
   background-color: var(--secondaryColorTwo);
 }
 
@@ -110,26 +113,6 @@ body {
   transform: scale(40%);
 }
 .register-business_text > h3 {
-  color: var(--secondaryColorTwo);
-  text-transform: uppercase;
-}
-
-.register-organization {
-  display: flex;
-  gap: 5px;
-  height: 80px;
-}
-
-.register-organization_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: 100%;
-  background-color: var(--secondaryColorTwo);
-}
-
-.register-organization_text > h3 {
   color: var(--secondaryColorTwo);
   text-transform: uppercase;
 }
