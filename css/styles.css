@@ -184,3 +184,36 @@ header p {
 .bannerNav {
   width: 100%;
 }
+
+/* NOSOTROS */
+.nosotrosSolutions_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background-color: var(--secondaryColorTwo);
+  gap: 5%;
+  color: #fff;
+}
+
+.nosotrosSolutions_div-img {
+  width: 50%;
+  height: 20%;
+}
+
+.nosotrosSolutions_div-img > img {
+  height: 100%;
+  width: 100%;
+}
+.nosotrosSolutions_div-text {
+  width: 50%;
+}
+
+.nosotrosSolutions_div-text > h3 {
+  margin-bottom: 3%;
+  font-size: 200%;
+}
+
+.nosotrosSolutions_div-text > p {
+  font-size: 120%;
+}
