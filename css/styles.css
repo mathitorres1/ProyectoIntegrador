@@ -2,7 +2,7 @@
   --primaryColor: #5227cc;
   --primarColorTwo: #7749f8;
   --secondaryColor: #1c78fd;
-  --secondarColorTwo: #5299ff;
+  --secondaryColorTwo: #5299ff;
   --volunteeringColor: #dc3545;
   --donatingColor: #ff9607;
   --recycleColor: #28a745;
@@ -22,7 +22,6 @@ body {
 
 .container {
   display: flex;
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,8 +41,10 @@ body {
 }
 
 .popup-content {
-  height: 250px;
-  width: 500px;
+  gap: 5px;
+  display: flex;
+  height: 60vh;
+  width: 90vh;
   background: #fff;
   padding: 0.2%;
   border-radius: 5px;
@@ -53,24 +54,32 @@ body {
 .principalImg-popUp {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.register_div {
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .close-popup {
   position: absolute;
-  top: 0%;
-  right: -3%;
+  top: 0;
+  right: 0;
   width: 10%;
   height: 10%;
   cursor: pointer;
+  transform: scale(50%);
 }
 
 .popup-title {
+  text-align: center;
+  justify-content: center;
   font-size: 90%;
   top: 15%;
-  margin-left: 65%;
-  position: absolute;
   text-transform: uppercase;
   cursor: default;
 }
@@ -81,7 +90,46 @@ body {
 .aText {
   color: #90979d;
   text-decoration: none;
-  margin-left: 42%;
-  position: absolute;
   cursor: default;
+}
+
+.register-business {
+  display: flex;
+  height: 80px;
+}
+.register-business_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: var(--secondaryColorTwo);
+}
+
+.register-business_logo > img {
+  transform: scale(40%);
+}
+.register-business_text > h3 {
+  color: var(--secondaryColorTwo);
+  text-transform: uppercase;
+}
+
+.register-organization {
+  display: flex;
+  gap: 5px;
+  height: 80px;
+}
+
+.register-organization_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: var(--secondaryColorTwo);
+}
+
+.register-organization_text > h3 {
+  color: var(--secondaryColorTwo);
+  text-transform: uppercase;
 }
