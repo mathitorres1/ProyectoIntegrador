@@ -10,7 +10,7 @@ document.querySelector(".close-popup").addEventListener("click", function () {
 
 $('.newsSlick').slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 3,
   dots: true
 })
