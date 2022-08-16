@@ -12,6 +12,16 @@ document.querySelector(".close-popup").addEventListener("click", function () {
 $('.newsSlick').slick({
   infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 3,
-  dots: true
-})
+  slidesToScroll: 1,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 844,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      }
+    }
+  ]
+}) 
