@@ -19,33 +19,53 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
-  height: 100px;
-}
-
-.logo {
-  float: left;
-  margin: 20px;
-}
-
-.navBar {
   display: flex;
-  list-style: none;
-  height: 100px;
-}
-
-.navItem {
-  float: left;
-  margin: 5px;
-  padding: 35px;
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  width: 80%;
-  height: 100px;
+  width: 100%;
+}
+
+a {
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
+
+.headerText {
+  background-image: url("/Materiales/manos.jpg");
+  background-repeat: round;
+  width: 100%;
+  height: 25%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: larger;
+}
+
+@media (max-width: 390px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .headerText {
+      font-size: large;
+    }
+    .headerText > h1 {
+      font-size: 120%;
+    }
+}
+
+.headerText > h1 {
+  margin-bottom: 2%;
 }
 
 .logInButton {
@@ -53,8 +73,8 @@ nav {
   color: white;
   border-radius: 20px;
   border: none;
-  height: 30px;
-  width: 150px;
+  height: 5em;
+  width: 8em;
 }
 
 .logInButton:hover {
@@ -85,6 +105,9 @@ header p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  height: 5em;
+  width: 8em;
+
 }
 
 .container {
@@ -392,6 +415,70 @@ NOSOTROS*/
     Y
   CONTACTO*/
 
+.contact {
+  margin-top: 5%;
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 50% 50%;
+  gap: 1%;
+}
+
+.contact > img {
+  grid-area: a;
+  width: 80%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.contact > .contactForm {
+  grid-area: b;
+  width: 80%;
+  text-align: center;
+}
+
+.contactForm > form {
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 50% 50%;
+  gap: 2%;
+}
+
+.contactInfo {
+  grid-area: a;
+  text-align: left;
+}
+
+.contactInfo > div > input {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0.1em 0.1em gray;
+}
+
+.contactMessage {
+  grid-area: b;
+  text-align: left;
+}
+
+.contactMessage > textarea {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0.1em 0.1em gray;
+}
+
+.contactForm > input {
+  margin-top: 3%;
+  background-color: var(--primaryColor);
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: medium;
+  border-radius: 15px;
+  color: white;
+}
+
 footer {
   background-color: var(--primaryColor);
   padding-top: 2%;
@@ -417,11 +504,17 @@ footer {
 
 .footer-links > ul {
   list-style: none;
-  color: white;
+  
 }
 
 .footer-links > ul > li {
   margin: 1%;
+  
+}
+
+.footer-links > ul > li > a {
+  text-decoration-line: none;
+  color: white;
 }
 
 .footer-social {
