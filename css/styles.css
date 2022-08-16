@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   height: 100px;
 }
@@ -369,6 +373,70 @@ header p {
   background-color: var(--laborCalls);
 }
 
+.contact {
+  margin-top: 5%;
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 50% 50%;
+  gap: 1%;
+}
+
+.contact > img {
+  grid-area: a;
+  width: 80%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.contact > .contactForm {
+  grid-area: b;
+  width: 80%;
+  text-align: center;
+}
+
+.contactForm > form {
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 50% 50%;
+  gap: 2%;
+}
+
+.contactInfo {
+  grid-area: a;
+  text-align: left;
+}
+
+.contactInfo > div > input {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0.1em 0.1em gray;
+}
+
+.contactMessage {
+  grid-area: b;
+  text-align: left;
+}
+
+.contactMessage > textarea {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0.1em 0.1em gray;
+}
+
+.contactForm > input {
+  margin-top: 3%;
+  background-color: var(--primaryColor);
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: medium;
+  border-radius: 15px;
+  color: white;
+}
+
 footer {
   background-color: var(--primaryColor);
   padding-top: 2%;
@@ -394,11 +462,17 @@ footer {
 
 .footer-links > ul {
   list-style: none;
-  color: white;
+  
 }
 
 .footer-links > ul > li {
   margin: 1%;
+  
+}
+
+.footer-links > ul > li > a {
+  text-decoration-line: none;
+  color: white;
 }
 
 .footer-social {
