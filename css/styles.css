@@ -1,6 +1,6 @@
 :root {
   --primaryColor: #5227cc;
-  --primarColorTwo: #7749f8;
+  --primaryColorTwo: #7749f8;
   --secondaryColor: #1c78fd;
   --secondaryColorTwo: #5299ff;
   --volunteeringColor: #dc3545;
@@ -102,24 +102,33 @@ header p {
   display: none;
   justify-content: center;
   align-items: center;
+  
 }
 
 .popup-content {
   gap: 5px;
   display: flex;
-  height: 60vh;
-  width: 90vh;
+  height: auto;
+  width: 50%;
   background: #fff;
   padding: 0.2%;
   border-radius: 5px;
   position: relative;
+  border-radius: 4%;
+  animation: none;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .principalImg-popUp {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+  border-radius: 4%;
 }
 
 .register_div {
@@ -158,10 +167,11 @@ header p {
 .register-business {
   display: flex;
   height: 30%;
-  margin-top: 10%;
+  margin: 5%;
   gap: 5px;
   overflow: hidden;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px #90979d;
 }
 .register-business_logo {
   display: flex;
@@ -179,12 +189,39 @@ header p {
 .register-business_text > h3 {
   color: var(--secondaryColorTwo);
   text-transform: uppercase;
+  margin: 5%;
+}
+
+.register-business_text > p {
+  margin: 5%;
+}
+
+.register-organization_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  gap: 5%;
+  background-color: var(--primaryColorTwo);
+}
+
+.register-organization_logo > img {
+  transform: scale(40%);
+}
+.register-organization_text > h3 {
+  color: var(--primaryColorTwo);
+  text-transform: uppercase;
+  margin: 5%;
+}
+
+.register-organization_text > p {
+  margin: 5%;
 }
 
 .bannerNav {
   width: 100%;
 }
-
 
 .newsContainer{
   background-color: var(--secondaryColor);
@@ -321,4 +358,51 @@ header p {
 
 .bg4 {
   background-color: var(--laborCalls);
+}
+
+footer {
+  background-color: var(--primaryColor);
+  padding-top: 2%;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-areas: "a b c d e" ;
+  grid-template-columns: 15% 15% 40% 15% 15%;
+}
+
+.footer-social > img {
+  width: 20%;
+}
+
+.footer-logo {
+  grid-area: b;
+}
+
+.footer-links {
+  grid-area: c;
+}
+
+.footer-links > ul {
+  list-style: none;
+  color: white;
+}
+
+.footer-links > ul > li {
+  margin: 1%;
+}
+
+.footer-social {
+  grid-area: d;
+  color: white;
+}
+
+.footer-end {
+  height: 20px;
+}
+
+footer > hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
