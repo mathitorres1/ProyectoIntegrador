@@ -9,6 +9,9 @@
   --laborCalls: #17a288;
 }
 
+/*NAVIGATION 
+    BAR*/
+
 * {
   font-family: "DM Sans", sans-serif;
   padding: 0;
@@ -58,6 +61,10 @@ nav {
   cursor: pointer;
 }
 
+/*HEADER
+    Y
+  BANNER*/
+
 header {
   position: relative;
 }
@@ -88,6 +95,11 @@ header p {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/*VENTANA 
+    DE 
+  REGISTRO
+  POP UP*/
 
 .popup {
   background: rgba(0, 0, 0, 0.5);
@@ -221,6 +233,10 @@ header p {
   margin-bottom: -5px;
 }
 
+/*NOTICIAS 
+      Y 
+  CARRUSEL*/
+
 .newsContainer{
   background-color: var(--secondaryColor);
   display: flex;
@@ -265,6 +281,9 @@ header p {
   padding: 10px;
 }
 
+/*SECCION 
+NOSOTROS*/
+
 .nosotrosSolutions_div {
   display: flex;
   justify-content: center;
@@ -276,7 +295,7 @@ header p {
 }
 
 .nosotrosSolutions_div-img {
-  width: 50%;
+  width: 100%;
   height: 20%;
 }
 
@@ -341,9 +360,9 @@ header p {
 .nosotrosOportunities {
   display: flex;
   flex-direction: column;
-  padding: 2%;
   gap: 20px;
 }
+
 .nosotrosOportunities_text > h3 {
   margin-bottom: 1%;
   margin-top: 1%;
@@ -368,6 +387,10 @@ header p {
 .bg4 {
   background-color: var(--laborCalls);
 }
+
+/*FOOTER 
+    Y
+  CONTACTO*/
 
 footer {
   background-color: var(--primaryColor);
