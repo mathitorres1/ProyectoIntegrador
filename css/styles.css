@@ -423,6 +423,12 @@ NOSOTROS*/
   background-color: var(--laborCalls);
 }
 
+/*SLICK*/
+
+.slickContainers {
+  border-radius: 10px;
+}
+
 /*FOOTER 
     Y
   CONTACTO*/

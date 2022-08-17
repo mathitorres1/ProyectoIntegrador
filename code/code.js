@@ -1,3 +1,9 @@
+window.onload = init();
+
+function init(){
+  newsDate();
+}
+
 document
   .getElementById("registerPopupButton")
   .addEventListener("click", function () {
@@ -25,3 +31,27 @@ $('.newsSlick').slick({
     }
   ]
 }) 
+
+function randomDateJuly(){
+  let date = "Aug ";
+  let num;
+  num = Math.floor(Math.random()*10+1);
+  date += num;
+  return date;
+}
+
+function newsDate(){
+  let news1 = document.getElementById("slick-icons-text1");
+  let news2 = document.getElementById("slick-icons-text2");
+  let news3 = document.getElementById("slick-icons-text3");
+  let news4 = document.getElementById("slick-icons-text4");
+  let news5 = document.getElementById("slick-icons-text5");
+  let news6 = document.getElementById("slick-icons-text6");
+  news1.textContent = randomDateJuly();
+  news2.textContent = randomDateJuly();
+  news3.textContent = randomDateJuly();
+  news4.textContent = randomDateJuly();
+  news5.textContent = randomDateJuly();
+  news6.textContent = randomDateJuly();
+}
+
