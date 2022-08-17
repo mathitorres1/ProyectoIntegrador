@@ -19,7 +19,6 @@ nav{
 
 header{
     height: 500px;
-    object-fit: cover;
 }
 
 .imgText{
@@ -27,6 +26,9 @@ header{
     padding: 20px;
 }
 
+.bannerNav{
+    object-fit: cover;
+}
 /*RESPONSIVE DEL POP UP*/
 
 .popup{
@@ -117,6 +119,25 @@ header{
 }
 .newsContainer{
     padding-left: 10px;
+}
+
+/*RESPONSIVE SECCION CONTACTO*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.contact > img{
+    width: 100%;
+    margin-left: 0;
+}
+
+.contactForm{
+    margin: 30px;
 }
 
 /*RESPONSIVE SECCION FOOTER*/
