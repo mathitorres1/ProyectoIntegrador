@@ -14,6 +14,7 @@ nav{
 .logInButton {
     margin-top: 0px;
 }
+
 /*RESPONSIVE DE LA SECCION HEADER*/
 
 header{
@@ -25,6 +26,21 @@ header{
     width: 100%;
     padding: 20px;
 }
+
+/*RESPONSIVE DEL POP UP*/
+
+.popup{
+    font-size: 10px;
+}
+
+.popup-content {
+    width: 100%;
+  }
+
+.principalImg-popUp {
+    width: 50%;
+    height: 100%;
+  }
 
 /*RESPONSIVE DE LA SECCION NOSOTROS*/
 

@@ -152,10 +152,9 @@ header p {
   height: auto;
   width: 50%;
   background: #fff;
-  padding: 0.2%;
+  padding: 1px;
   border-radius: 5px;
   position: relative;
-  border-radius: 4%;
   animation: none;
 }
 
@@ -169,10 +168,11 @@ header p {
   border-bottom-left-radius: 5px;
   width: 50%;
   height: 50%;
-  border-radius: 4%;
+  border-radius: 5px;
 }
 
 .register_div {
+  padding: 5px;
   width: 100%;
   gap: 5px;
   display: flex;
