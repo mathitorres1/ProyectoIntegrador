@@ -18,7 +18,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+header{
+  font-size: 1.2rem;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -28,6 +30,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 a {
@@ -35,23 +38,28 @@ a {
   font-style: none;
   text-decoration: none;
 }
-
-.headerText {
-  background-image: url("/Materiales/manos.jpg");
-  background-repeat: round;
-  width: 100%;
-  height: 25%;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  font-size: larger;
+.navItem a:hover{
+  cursor: pointer;
 }
 
-@media (max-width: 390px) {
+.logo {
+  float: left;
+  margin: 20px;
+}
+
+.navBar {
+  display: flex;
+  list-style: none;
+  height: 100px;
+}
+
+.navItem {
+  float: left;
+  margin: 5px;
+  padding: 35px;
+}
+
+@media (max-width: 844px) {
     nav {
       display: flex;
       flex-direction: column;
@@ -73,8 +81,10 @@ a {
   color: white;
   border-radius: 20px;
   border: none;
-  height: 5em;
+  height: 4em;
   width: 8em;
+  margin-top: 20px;
+  font-size: 1rem;
 }
 
 .logInButton:hover {
@@ -106,7 +116,7 @@ header p {
   top: 50%;
   transform: translate(-50%, -50%);
   height: 5em;
-  width: 8em;
+  width: 100%;
 
 }
 
@@ -268,6 +278,7 @@ header p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: -20px;
 }
 
 .slickIcons{
@@ -292,7 +303,7 @@ header p {
 
 .imgSlick{
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .slickContainers{
@@ -315,10 +326,11 @@ NOSOTROS*/
   background-color: var(--secondaryColorTwo);
   gap: 5%;
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .nosotrosSolutions_div-img {
-  width: 100%;
+  width: 50%;
   height: 20%;
 }
 
