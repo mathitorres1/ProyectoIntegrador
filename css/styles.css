@@ -166,8 +166,8 @@ header p {
 .principalImg-popUp {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
 }
 
@@ -478,6 +478,10 @@ NOSOTROS*/
 .contactMessage {
   grid-area: b;
   text-align: left;
+}
+
+.contactMessage > textarea {
+  resize: none;
 }
 
 .contactMessage > textarea {

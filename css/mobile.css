@@ -39,8 +39,11 @@ header{
     width: 100%;
   }
 
+.principalImgContainer {
+    width: 100%;
+  }
+
 .principalImg-popUp {
-    width: 50%;
     height: 100%;
   }
 
